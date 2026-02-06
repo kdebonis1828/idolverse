@@ -12,10 +12,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} antialiased dark:bg-black/95  min-h-screen`}
+        className={`${inter.className} antialiased bg-[url('/idols/mainbg.png')] bg-top-right  min-h-screen `}
       >
-        <Navbar />
-        {children}
+          <Navbar />
+          {children}
+        
       </body>
     </html>
   );
