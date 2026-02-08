@@ -43,8 +43,7 @@ export const HeroVideo = ({ src, poster, preloadBytes = 2000000, className = "ab
           className={className}
           >
           {videoUrl && <source src={videoUrl} type="video/mp4" />}
-          <source src="/idols/kpop.mp4" type="video/mp4"/>
-          
+          <source src="/idols/kpopbg.mp4" type="video/mp4"/>
         </video>
     
     );

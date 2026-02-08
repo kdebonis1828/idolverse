@@ -5,6 +5,7 @@ import { Footer } from "./ui/components/Footer";
 import { HeroContent } from "./ui/components/HeroContent";
 import { HeroVideo } from "./ui/components/HeroVideo";
 import { MusicList } from "./ui/components/music_section/MusicList";
+import { Newsletter } from "./ui/components/Newsletter";
 
 
 
@@ -12,7 +13,7 @@ export default function Home() {
   return (
   <div>
     <div className="flex relative  top-0 flex-col  w-full  overflow-y-hidden  font-sans">        
-        <HeroVideo className="object-cover opacity-65 h-181.25 overflow-y-hidden" src="/idols/kpop.mp4" />
+        <HeroVideo className="h-[70vh] md:h-[90vh] object-cover opacity-98  overflow-x-hidden rounded-b-3xl" src="/idols/kpopbg.mp4" />
         <HeroContent />
     </div>
     <div>
@@ -24,11 +25,11 @@ export default function Home() {
       <Experiences />
     </div>
 
-    <div className="flex justify-center mb-96">
+    <div className="flex justify-center">
       <MusicList />
     </div>
-    <div>
-      {/* reviews */}
+    <div className="flex justify-center mt-24 mb-24">
+      <Newsletter />
     </div>
 
     <Footer />
