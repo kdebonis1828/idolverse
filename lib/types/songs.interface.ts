@@ -1,5 +1,6 @@
 export interface songs {
-    band: string,
+    artist?: string,
     track: string,
     streams: string
+    rank: string | number
 }

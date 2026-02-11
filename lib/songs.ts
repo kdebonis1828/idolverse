@@ -54,7 +54,7 @@ export const Songs = {
     },
     {
       "artist": "Bang Chan",
-      "track": "Hoodie Weather (Stray Kids Solo)",
+      "track": "Hoodie Weather",
       "streams": "310M"
     },
     {

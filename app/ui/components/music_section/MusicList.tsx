@@ -12,7 +12,7 @@ export const MusicList = () => {
     const [songs, setSongs] = useState(true)
   return (
     <div className="flex justify-center flex-col items-center">
-     <h1 className="text-6xl text-white text-center font-bold mb-8 mt-12">Worldwide Top Tracks</h1> 
+     <h1 className="text-5xl md:text-6xl text-white text-center font-bold mb-8 mt-12">Worldwide Top Tracks</h1> 
   <MusicToggleButton modus={songs} setModus={() => setSongs(!songs)} />
   <div>
     <AnimatePresence mode="wait" >

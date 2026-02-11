@@ -1,5 +1,5 @@
 "use client"
-import { BandsList } from "./ui/components/BandsList";
+import { BandsList } from "./ui/components/bands_section/BandsList";
 import { Experiences } from "./ui/components/Experiences";
 import { Footer } from "./ui/components/Footer";
 import { HeroContent } from "./ui/components/HeroContent";
