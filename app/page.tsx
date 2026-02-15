@@ -1,6 +1,6 @@
 "use client"
 import { BandsList } from "./ui/components/bands_section/BandsList";
-import { Experiences } from "./ui/components/Experiences";
+import { Experiences } from "./ui/components/experiences_section/Experiences";
 import { Footer } from "./ui/components/Footer";
 import { HeroContent } from "./ui/components/HeroContent";
 import { HeroVideo } from "./ui/components/HeroVideo";
@@ -17,11 +17,11 @@ export default function Home() {
         <HeroContent />
     </div>
     <div>
-      <h1 className="text-white text-center font-bold text-6xl mt-15 mb-2">Bands</h1>
+      <h1 className="text-white text-center font-bold text-5xl md:text-6xl mt-15 mb-2">Bands</h1>
       <BandsList />
     </div>
-    <div>
-      <h1 className="text-white text-center font-bold text-6xl mt-40 mb-12">Experiences</h1>
+    <div className="flex flex-col justify-center items-center">
+      <h1 className=" text-white text-center font-bold text-5xl md:text-6xl mt-40 mb-12">Experiences</h1>
       <Experiences />
     </div>
 

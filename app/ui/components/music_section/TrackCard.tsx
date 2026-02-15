@@ -5,7 +5,12 @@ import {motion} from "framer-motion";
 
 export const TrackCard = ({artist, track, streams, rank}: songs) => {
   return (
-    <div className="relative flex justify-between text-white w-82.5 md:w-112.5 h-38 rounded-3xl p-3 
+    <motion.div 
+        initial={{opacity:0, y: 20}}
+        whileInView={{opacity: 1, y: 0}}
+        viewport={{once: true}}
+        transition={{duration: 0.6, ease: "easeIn"}}
+        className="relative flex justify-between text-white w-82.5 md:w-112.5 h-38 rounded-3xl p-3 
                      bg-black/30  border-fuchsia-500/60
                         shadow-[0_0_15px_rgba(217,70,239,0.9),0_0_35px_rgba(34,211,238,0.6)]"
                     >
@@ -31,7 +36,7 @@ export const TrackCard = ({artist, track, streams, rank}: songs) => {
                                 <FaSpotify className="size-6 md:size-8" />
                             </motion.button>
                         </div>
-                    </div>
+                    </motion.div>
   )
 }
 

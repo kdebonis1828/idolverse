@@ -16,7 +16,7 @@ export const BandMobileCarrousel = () => {
                 ease: "linear",
                 duration: 20,
               }}
-              whileTap={{x: 0 }}
+              whileHover={{x: 0 }}
               ref={tickerRef}
             >
           {[...landingBands, ...landingBands].map((band: bandProps, i) => (
