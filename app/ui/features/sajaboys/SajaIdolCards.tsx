@@ -15,9 +15,9 @@ export const SajaIdolCard = ({idol, demon}: IdolSajaProp) => {
     
   return (
     <Card
-      className={`flex relative flex-col justify-center items-center scale-105 w-50 rounded-xl border py-0 border-pink-600 border-t-red-600-700 border-t-2
-        shadow-card-glow
-      ${demon ? "bg-linear-to-r from-indigo-950 via-purple-800 to-pink-700" : "bg-linear-to-r from-cyan-300 via-pink-400 to-fuchsia-400" }`}
+      className={`flex relative flex-col mt-20 justify-center items-center scale-105 w-50 rounded-xl border py-0 border-pink-600 border-t-red-600-700 border-t-2
+        shadow-card-glow bg-center bg-cover
+      ${demon ? "bg-[url(/idols/saja_boys/demonsajacard.png)] " : "bg-[url(/idols/saja_boys/sajacard.png)]" }`}
     >
         <AnimatePresence mode="wait">
             <motion.img
@@ -28,9 +28,7 @@ export const SajaIdolCard = ({idol, demon}: IdolSajaProp) => {
             transition={{ duration: 0.5, ease: "easeInOut" }}
             src={demon ? idol.demon_image : idol.image}
             alt={idol.name}
-            className="w-40 h-50 scale-150 object-contain
-            [mask-[linear-gradient(to_bottom,black_65%,transparent_100%)]
-            [-webkit-mask-image:linear-gradient(to_bottom,black_65%,transparent_100%)]"
+            className="h-50 scale-140 object-contain"
             />
         </AnimatePresence>
       <div className="relative bg-gray-900 w-full rounded-b-xl p-2 border-t-2 border-b-red-700 border-2 border-r-red-700">

@@ -1,5 +1,5 @@
 import { bands } from "@/lib/bands";
-import { BlackpinkIdolCards } from "../ui/features/blackpink/BlackpinkIdolCards";
+import { IdolCard } from "../ui/features/idolCard";
 
 
 
@@ -9,10 +9,16 @@ export default function Blackpink() {
        <div className="flex justify-around w-full">
         {
           bands.BLACKPINK.map(blackpink => (
-            <BlackpinkIdolCards 
+            <IdolCard
               key={blackpink.name}
-              name={blackpink.name}
-              image={blackpink.image}
+              idol={blackpink}
+              logo="/idols/blackpink/bplogo.png"
+              logoSize="w-20 h-20  absolute bottom-5"
+              className=" 
+                      border-pink-500 border-2 shadow-[0_0_40px_rgba(236,72,153,0.35)] 
+                        bg-[url(/idols/blackpink/bpcard.png)] bg-center bg-cover scale-160
+              "
+              idolImageStyle="scale-110"
             />
           ))
         }

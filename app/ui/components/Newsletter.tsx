@@ -7,7 +7,7 @@ export const Newsletter = () => {
       
       <div className="flex flex-col justify-center items-center text-center">
         
-        <h1 className={`${orbitron.className} text-xl md:text-3xl font-bold mb-6`}>
+        <h1 className={`${orbitron.className} text-xl md:text-4xl font-bold mb-6`}>
           Your Closer Connection to the Best of K-Pop
           <span className="block mt-2 text-purple-300">
             Join Our Newsletter

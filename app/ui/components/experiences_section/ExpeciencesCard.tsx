@@ -12,6 +12,7 @@ interface cardProps {
   href: string;
   variant?: "detailed" | "centered";
   className?: string
+  imageStyle?: string
 }
 
 export const ExpeciencesCard = ({
@@ -22,7 +23,8 @@ export const ExpeciencesCard = ({
   alt,
   href,
   variant = "centered",
-  className = ""
+  className = "",
+  imageStyle = ""
 }: cardProps) => {
 
     const baseStyles = `
@@ -56,7 +58,7 @@ export const ExpeciencesCard = ({
             <Image
               width={1200}
               height={1200}
-              className={`absolute top-38 left-1/2 -translate-x-1/2 md:top-1/2 -translate-y-1/2 
+              className={`${imageStyle} absolute top-38 left-1/2 -translate-x-1/2 md:top-1/2 -translate-y-1/2 
                     w-96 h-64  md:w-64 md:h-80 md:scale-160 object-contain mt-3
                     [mask-[linear-gradient(to_bottom,black_65%,transparent_100%)]
                     [-webkit-mask-image:linear-gradient(to_bottom,black_65%,transparent_100%)]`}

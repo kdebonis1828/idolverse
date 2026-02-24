@@ -31,8 +31,6 @@ export default function Home() {
     <div className="flex justify-center mt-24 mb-24">
       <Newsletter />
     </div>
-
-    <Footer />
   </div>      
   );
 }

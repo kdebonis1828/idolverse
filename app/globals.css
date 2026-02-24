@@ -1,6 +1,13 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+
+  body {
+    @apply select-none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+
 @layer utilities {
   .shadow-card-glow {
     box-shadow:

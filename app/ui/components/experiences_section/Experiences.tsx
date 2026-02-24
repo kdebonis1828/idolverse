@@ -25,8 +25,9 @@ export const Experiences = () => {
             href='/'
         /> 
        <ExpeciencesCard 
-            title='Stray Kids dance session'
-            image='/idols/straykids/expstraykids.png'
+            title='Videocall with Huntrix'
+            image='/idols/huntrix/huntrixexp.png'
+            imageStyle='scale-130! mt-15'
             alt='Stray kids Promotional image'
             href='/'
         />

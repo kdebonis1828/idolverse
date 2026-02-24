@@ -10,10 +10,11 @@ export const BandDesktop = () => {
           <motion.div
             initial="rest"
             whileHover="hover"
-            whileTap="hover"
+            whileTap="tap"
             variants={{
               rest: { scale: 1 },
               hover: { scale: 1.1 },
+              tap: {scale: 0.98}
             }}
             transition={{ duration: 0.3 }}
             className="relative w-50 h-50 rounded-full overflow-hidden mt-10 flex items-center justify-center shadow-[0_0_25px_rgba(168,85,247,0.45),0_0_60px_rgba(236,72,153,0.35)]"

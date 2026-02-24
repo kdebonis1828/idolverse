@@ -1,7 +1,8 @@
 "use client"
 import { AnimatePresence } from "motion/react"
 import {motion} from 'framer-motion';
-import { delay } from "motion";
+import { orbitron } from "../fonts";
+import Image from "next/image";
 
 export const HeroContent = () => {
   return (
@@ -18,7 +19,9 @@ export const HeroContent = () => {
         times: [0, 0.1, 0.9, 1]
       }}
     >
-      Lorem ipsum dolor sit amet.
+      <h1 className={`${orbitron.className} text-yellow-100 text-shadow-2xs text-6xl`}>
+        This is the biggest Kpop Experience
+      </h1>
     </motion.div>
 
     <motion.div
@@ -33,20 +36,43 @@ export const HeroContent = () => {
         delay: 6 // empieza justo cuando termina el primer texto
       }}
     >
-      Lorem ipsum dolor sit amet consectetur adipisicing.
+     <h1 className={`${orbitron.className} text-yellow-100 text-shadow-2xs text-6xl`}>
+      All your idols in one place
+      </h1> 
     </motion.div>
 
     <motion.div
+      className="absolute"
       key="text-3"
+      initial={{ opacity: 0, scale: 0 }}
+      animate={{ opacity: [0, 1, 1, 0], scale: [0, 1] }}
+      transition={{
+        duration: 4,
+        ease: "easeInOut",
+        times: [0, 0.1, 0.9, 1],
+        delay: 12 // empieza justo cuando termina el primer texto
+      }}
+    >
+     <h1 className={`${orbitron.className} text-yellow-100 text-shadow-2xs text-6xl`}>welcome to</h1> 
+    </motion.div>
+
+
+    <motion.div
+      key="text-4"
       initial={{ opacity: 0, scale: 0, }}
       animate={{ opacity: 1, scale: [0, 1 ]}}
       transition={{
         duration: 3,
         ease: "easeInOut",
-        delay: 14 // empieza después de que el segundo texto desaparece
+        delay: 16 
       }}
     >
-      Lorem, ipsum dolor.
+      <Image 
+        width={700}
+        height={400}
+        alt="idolverse logo"
+        src={'/idols/logo.png'}
+      />
     </motion.div>
   </AnimatePresence>
 </div>
