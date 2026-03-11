@@ -17,13 +17,16 @@ interface CardProps {
 export const IdolCard = ({ idol, className, logo, logoSize, idolImageStyle }: CardProps) => {
   return (
     <motion.div
+        initial={{opacity: 0, y: 70}}
+        whileInView={{opacity:1, y: 0}}
+        viewport={{once: true}}
         whileHover={{scale: 1.05}}
         whileTap={{scale: 0.98}}
-        transition={{duration: 0.3, ease: "easeInOut"}}
+        transition={{duration: 0.6, ease: "easeInOut"}}
     >
       <Link href={"/"}>
     <Card
-      className={`${className} flex relative flex-col justify-center items-center  w-50 h-full  rounded-t-xl  py-0`}
+      className={`${className} flex relative flex-col justify-center items-center w-45 md:w-50 h-full  rounded-t-xl  py-0`}
       >
       <motion.div
          initial={{ opacity: 0, y: 20 }}
@@ -39,7 +42,7 @@ export const IdolCard = ({ idol, className, logo, logoSize, idolImageStyle }: Ca
             height={1200}
             />
       </motion.div>
-      <div className="bg-black w-50 border-2 border-pink-800 rounded-b-xl h-15 flex justify-center items-center absolute -bottom-12 z-30">
+      <div className="bg-black w-45 md:w-50 border-2 border-pink-800 rounded-b-xl h-15 flex justify-center items-center absolute -bottom-12 z-30">
         <img
           className={`${logoSize}`}
           src={logo}

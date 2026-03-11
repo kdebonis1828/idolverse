@@ -1,6 +1,6 @@
 import "./globals.css";
 import { inter } from "./ui/fonts";
-import Navbar from "./ui/components/Navbar";
+import {Navbar} from "./ui/components/Navbar";
 import { Footer } from "./ui/components/Footer";
 
 
