@@ -52,7 +52,7 @@ export const BandHero = ({name, bandImage, description, quote, classname} : hero
               initial={{opacity:0, y: 50}}
               animate={{opacity: 1, y: 0}}
               transition={{delay:2, duration: 1.1, ease:"easeIn"}}
-              className="md:text-2xl text-slate-400 mt-8 md:mt-18 italic tracking-wide">
+              className="md:text-2xl text-slate-400 mt-8 md:mt-12 italic tracking-wide">
                “{quote}”
             </motion.h4>
           </motion.div>

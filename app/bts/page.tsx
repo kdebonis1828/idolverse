@@ -16,6 +16,7 @@ export default function BTS() {
                   description={bands.BTS.description}
                   bandImage={bands.BTS.bandPhoto}
                   quote={bands.BTS.quote}
+                  classname="w-[70%] h-125"
               />
       </div>
         <h4 className="text-4xl md:text-6xl text-center mt-22 font-bold text-white">Members</h4>

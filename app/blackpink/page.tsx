@@ -12,17 +12,18 @@ export default function Blackpink() {
   return (
     <div className="flex flex-col min-h-screen  items-center justify-center md:px-8 py-20 font-sans">        
        
-         <div className="flex text-center mt-20 h-full" >
+         <div className="flex text-center mt-16 h-full" >
                       <BandHero 
                           name={bands.BLACKPINK.name}
                           description={bands.BLACKPINK.description}
                           bandImage={bands.BLACKPINK.bandPhoto}
                           quote={bands.BLACKPINK.quote}
+                          classname="lg:w-[70%] lg:h-125"
                       />
           </div>
 
  <h4 className="text-4xl md:text-6xl text-center mt-22 font-bold text-white">Members</h4>
-      <div className="grid grid-cols-2 mt-10 mb-22 md:mt-32 mx-auto lg:grid-cols-4 gap-x-5 gap-y-18 md:gap-x-24 md:gap-y-62  lg:gap-y-32">
+      <div className="grid grid-cols-2 mt-10 mb-22 md:mt-32 mx-auto lg:grid-cols-4 gap-x-2 gap-y-18 md:gap-x-24 md:gap-y-62  lg:gap-y-32">
           {
             bandsMembers.BLACKPINK.map(blackpink => (
               <IdolCard
