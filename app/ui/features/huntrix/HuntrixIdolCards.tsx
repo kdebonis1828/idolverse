@@ -8,7 +8,7 @@ import { Card } from '../../components/ui/card';
 export const HuntrixIdolCards = ({image, name}: idols) => {
   return (
     <Card className="flex relative 
-    flex-col justify-center items-center scale-150 w-50 h-full  rounded-xl border py-0
+    flex-col justify-center items-center scale-120 mx-auto lg:scale-150 w-50 h-full  rounded-xl border py-0
      border-yellow-100 shadow-card-glow
      bg-linear-to-r from-slate-950 via-purple-900 to-fuchsia-700
      ">

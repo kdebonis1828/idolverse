@@ -16,7 +16,7 @@ export default function BTS() {
                   description={bands.BTS.description}
                   bandImage={bands.BTS.bandPhoto}
                   quote={bands.BTS.quote}
-                  classname="w-[70%] h-125"
+                  classname="w-full lg:w-[70%] lg:h-125 mx-auto"
               />
       </div>
         <h4 className="text-4xl md:text-6xl text-center mt-22 font-bold text-white">Members</h4>
@@ -43,7 +43,7 @@ export default function BTS() {
       </div>
           
         <div className="mt-15 flex flex-col justify-center items-center">
-          <h4 className="text-4xl md:text-6xl text-center mt-22 font-bold text-white">Popular Albums</h4>
+          <h4 className="text-4xl md:text-6xl text-center mt-12 font-bold text-white">Popular Albums</h4>
           <div className="flex gap-x-16 mt-10">
             <BandAlbum albums={bands.BTS.albums} />
           </div>

@@ -37,11 +37,12 @@ export const bands = {
     ],
   },
   HUNTRIX: {
-    name: "Huntr/x",
-    description: "The Huntr/x are a world-famous K-Pop girl group who live a double life. By day, they are global idols performing high-energy music and complex choreography for millions of fans. By night, they are a secret team of elite warriors dedicated to hunting down the demons that threaten the human world. Hailing from a lineage of warriors, the members use their unique musical talents and mystical weapons to track and eliminate supernatural threats. Their power is fueled by the energy they receive from their fans, creating a literal bond between their stage presence and their combat effectiveness. While the world sees them as pop icons, the Huntr/x operate in the shadows of Seoul, balancing the grueling demands of the idol industry with the life-or-death responsibility of protecting humanity from an ancient demonic invasion led by the underworld forces.",
+    name: "Huntrix",
+    bandPhoto: "/idols/huntrix/huntrixgroup.jpg",
+    description: "Huntr/x are global K-Pop icons by day and elite supernatural warriors by night. While the world sees only high-energy choreography and sold-out stadiums, these idols lead a double life protecting Seoul from an ancient demonic invasion.Hailing from a legendary lineage of warriors, the group channels the raw energy of their millions of fans to power their mystical weapons and combat skills. Every performance is a ritual; every stage is a battlefield. Balancing the grueling demands of the idol industry with the life-or-death responsibility of hunting demons, Huntr/x are the only line of defense between humanity and the rising forces of the underworld.",
     quote: "Hear our voice unwavering 'Til our song defeats the night",
     albums: [
-      { title: "", cover: "", link: "" },
+      { title: "Kpop demon hunter soundtrack", cover: "/idols/huntrix/huntrixalbum.jpg", link: "" },
     ],
   },
   SAJABOYS: {

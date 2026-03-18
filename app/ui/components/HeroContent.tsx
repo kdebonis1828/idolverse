@@ -60,11 +60,12 @@ export const HeroContent = () => {
     <motion.div
       key="text-4"
       initial={{ opacity: 0, scale: 0, }}
-      animate={{ opacity: 1, scale: [0, 1 ]}}
+      animate={{ opacity: [0,1, 1, 0], scale: [0, 1, 1 ]}}
       transition={{
-        duration: 3,
+        duration: 6,
         ease: "easeInOut",
-        delay: 16 
+        delay: 16,
+        times: [0, 0.1, 0.9, 1]
       }}
     >
       <Image 
